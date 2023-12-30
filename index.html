@@ -24,7 +24,7 @@
         <img id="profile" src="images/profile.png" alt="My Photo"><br>
         <h1 id="title">Hello World,</h1>
       <h1 id="title">I am Dharmin Nagar</h1>
-      <p class="lead"><em>a coding enthusiast</em></p>
+      <p class="lead"><em>a <span class="desc"></span></em></p>
     </div>
   </header>
 
@@ -136,6 +136,16 @@
   <footer id="main-footer">
       <p>&copy; Dharmin Nagar</p>
   </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".desc", {
+      strings: ["Coding Enthusiast", "Tech Geek" , "Web Developer"],
+      typeSpeed: 100,
+      backSpeed: 75,
+      loop: true
+    })
+  </script>
 </body>
 
 </html>
