@@ -56,19 +56,19 @@
     display: inline-block;
     padding: .6rem 1.5rem;
     border-radius: 3px;
-    background-color: var(--primary-color);
-    transition: all .5s ease-in-out;
+    background-color: #2ec4b6;
+    transition: all .3s ease-in-out;
   }
   
   .btn:hover {
-    background-color: rgb(230, 14, 14);
-    box-shadow: -5px 5px 0px 0px rgba(75, 250, 230, 0.5);
+    background-color: #a9d6e5;
+    box-shadow: -5px 5px 0px 0px #2ec4b6;
   }
   
   /* ABOUT PAGE */
   #about {
     height: 100vh;
-    background-color: #364156;
+    background-color: #011638;
   }
   
   #navbar {
@@ -114,6 +114,7 @@
     font-weight: bolder;
     line-height: 1.2;
     margin-bottom: 1rem;
+    text-align: center;
   }
   
   .lead {
@@ -159,7 +160,7 @@
     margin: auto;
     margin-bottom: 3rem;
   }
-  
+
   #projects .projects .box {
     background-color: #eee;
     border: 5px solid #eee;
@@ -194,7 +195,7 @@
   /* CONTACT SECTION */
   #contact {
     height: 100vh;
-    background-color: #444;
+    background-color: #364156;
     color: #fff;
   }
   
@@ -235,22 +236,91 @@
     transform: translateY(-5px);
   }
   
-  
   /* FOOTER SECTION */
   #main-footer {
     border-top: solid 4px white;
     padding: 1.6rem;
-    background-color: #444;
+    background-color: #364156;
     color: #fff;
     font-size: large;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 760px) {
     #navbar {
+      /* display: none; */
       padding: 0rem 1rem;
       justify-content: center;
     }
-  
+
+    .navbar_container {
+      display: flex; 
+      justify-content: space-between;
+      height: 70px; 
+      z-index: 1;
+      width: 100%; 
+      max-width: 1300px;
+      padding: 0;
+    }
+
+    .navbar_menu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: -1;
+      left: 0px;
+    }
+
+    .navbar_menu.active {
+      background-color: #011638;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.2s ease;
+      z-index: 99;
+
+    }
+
+    .navbar_toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.2s ease-in-out;
+      background: #fff;
+    }
+
+    #navbar ul{
+      display: block;
+    }
+
+    #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar {
+      display: block;
+      cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+   
     #projects .projects {
       grid-template-columns: repeat(1, 1fr);
     }

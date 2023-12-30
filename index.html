@@ -14,16 +14,25 @@
   <!-- PAGE ABOUT -->
   <header id="about">
     <nav id="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="navbar_container">
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        
+        <ul class="navbar_menu">
+          <li class="navbar_items"><a href="#about">About</a></li>
+          <li class="navbar_items"><a href="#projects">Projects</a></li>
+          <li class="navbar_items"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+
     <div id="welcome-section" class="container">
         <img id="profile" src="images/profile.png" alt="My Photo"><br>
         <h1 id="title">Hello World,</h1>
-      <h1 id="title">I am Dharmin Nagar</h1>
+        <h1 id="title">I am Dharmin Nagar</h1>
       <p class="lead"><em>a <span class="desc"></span></em></p>
     </div>
   </header>
@@ -123,7 +132,11 @@
             <i class="fab fa-twitter fa-1x"></i>
             Twitter
           </a>
-          <a href="#">
+          <a target="_blank" href="https://www.youtube.com/DharminNagar">
+            <i class="fab fa-youtube fa-1x"></i>
+            YouTube
+          </a>
+          <a href="mailto:dharminnagar@gmail.com">
             <i class="fas fa-envelope-open-text fa-1x"></i>
             Mail
           </a>
@@ -140,12 +153,14 @@
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed(".desc", {
-      strings: ["Coding Enthusiast", "Tech Geek" , "Web Developer"],
-      typeSpeed: 100,
+      strings: ["Coding Enthusiast", "Tech Geek" , "Web Developer", "Singer", "Piano Player"],
+      typeSpeed: 75,
       backSpeed: 75,
       loop: true
     })
   </script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
