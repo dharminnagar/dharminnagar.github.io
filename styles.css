@@ -69,10 +69,12 @@
   #about {
     height: 100vh;
     background-color: #011638;
+    background-image: url("images/subtle-white-feathers.png");
   }
   
   #navbar {
     background-color: #011638;
+    /* background-image: url("images/asfalt-light.png"); */
     color: #fff;
     padding: 0rem 3rem;
     display: flex;
@@ -132,6 +134,7 @@
     width: 100%;
     padding: 7rem .1rem;
     background-color: var(--secondary-color);
+    
   }
   
   #projects .projects {
@@ -196,6 +199,7 @@
   #contact {
     height: 100vh;
     background-color: #364156;
+    background-image: url("images/subtle-white-feathers.png");
     color: #fff;
   }
   
@@ -241,6 +245,7 @@
     border-top: solid 4px white;
     padding: 1.6rem;
     background-color: #364156;
+    background-image: url("images/subtle-white-feathers.png");
     color: #fff;
     font-size: large;
   }
